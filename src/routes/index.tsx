@@ -132,8 +132,8 @@ function Index() {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-30 border-b border-border/60 bg-background/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-          <a href="#top" className="font-display text-lg tracking-tight text-foreground">
-            Health <span className="text-primary">Bliss</span>
+          <a href="#top" className="flex items-center">
+            <img src="/logo.png" alt="HealthBliss" className="h-12 md:h-14 object-contain" />
           </a>
           <nav className="hidden gap-7 text-sm text-muted-foreground md:flex">
             <a href="#about" className="transition-colors hover:text-primary">
@@ -173,7 +173,10 @@ function Index() {
             <p className="animate-rise text-xs uppercase tracking-[0.35em] text-primary">
               The Complete Wisdom
             </p>
-            <h1 className="animate-rise mt-6 font-display text-4xl leading-tight text-foreground md:text-6xl">
+            <div className="animate-rise mt-6 flex justify-center">
+              <img src="/logo.png" alt="HealthBliss - Healthier Days, Happier You" className="h-40 md:h-56 object-contain" />
+            </div>
+            <h1 className="sr-only">
               Health Bliss
             </h1>
             <p className="animate-rise mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
@@ -385,7 +388,10 @@ function Index() {
       </main>
 
       <footer className="mx-auto max-w-6xl px-5 py-10 text-center text-xs text-muted-foreground">
-        <p>Health Bliss — The Complete Wisdom.</p>
+        <div className="flex items-center justify-center gap-3">
+          <img src="/logo.png" alt="HealthBliss" className="h-10 object-contain" />
+          <p className="text-sm">The Complete Wisdom.</p>
+        </div>
         <p className="mt-2">
           Information here is guidance and support, not a substitute for emergency medical care.
         </p>
